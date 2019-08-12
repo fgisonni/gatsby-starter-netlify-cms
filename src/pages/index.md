@@ -67,4 +67,7 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
+tags:
+  - flavor
 ---
+
