@@ -14,6 +14,44 @@ $black: #2b2523
 
 @import "~bulma"
 
+.section
+  padding: 3.5rem 0 3.5rem 20rem;
+
+.container
+  margin: 0;
+
+.page-padding
+  padding: 3rem 5rem 0 ;
+
+.navigation-padding
+  padding: 0 3.5rem;
+
+.main-navbar,
+.side-navbar
+  position: fixed;
+
+.main-navbar
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ccc;
+  z-index: 10;
+
+.side-navbar
+  height: 100%;
+  width: 20rem;
+  left: 0;
+  top: 0;
+  background: #242424;
+  padding: 5rem 3rem 0;
+  .navbar-menu
+    display: block
+    .navbar-item
+      color: #fff;
+      transition: .3s all;
+      margin: 1rem 0;
+      &:hover
+        background: #ccc;
 
 // responsiveness
 +tablet-only
