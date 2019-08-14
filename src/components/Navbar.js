@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
 
 const Navbar = class extends React.Component {
@@ -34,42 +33,53 @@ const Navbar = class extends React.Component {
 
   render() {
     return (
-      <nav
-        className="navbar is-transparent"
-        role="navigation"
-        aria-label="main-navigation"
-      >
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
+      <div>
+        {/*Top-Teir Navigation*/}
+        <nav
+          className="navbar main-navbar is-transparent"
+          role="navigation"
+          aria-label="secondary-navigation"
+        >
+          <div className="navigation-padding">
+            <div className="navbar-brand">
               <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-            </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
+              {/* Hamburger menu */}
+              <div
+                className={`navbar-burger burger ${this.state.navBarActiveClass}`}
+                data-target="navMenu"
+                onClick={() => this.toggleHamburger()}
+              >
+                <span />
+                <span />
+                <span />
+              </div>
             </div>
           </div>
+        </nav>
+        {/*Sidebar Navigation*/}
+        <nav
+          className="side-navbar"
+          role="navigation"
+          aria-label="main-navigation"
+        >
           <div
-            id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-            </div>
+            <Link className="navbar-item" to="/about">
+              About
+            </Link>
+            <Link className="navbar-item" to="/blog">
+              Blog
+            </Link>
+            <Link className="navbar-item" to="/test-page">
+              Test Page
+            </Link>
+            <Link className="navbar-item" to="/test-page-2">
+              Test Page 2
+            </Link>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     )
   }
 }
