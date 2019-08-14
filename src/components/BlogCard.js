@@ -5,6 +5,10 @@ import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 class BlogCard extends React.Component {
 
+  // componentDidMount(){
+  //   typeof window !== 'undefined' && window.location.pathname
+  // }
+
   render(props) {
 
     const { data } = this.props
@@ -15,7 +19,7 @@ class BlogCard extends React.Component {
         <div className="columns is-multiline">
         {posts &&
           posts.map(({ node: post }) => (
-            window.location.pathname === '/'+post.frontmatter.path ?
+            typeof window !== 'undefined' && window.location.pathname === '/'+post.frontmatter.path ?
             <div key={post.id} className={`is-parent column is-6`}>
               <div>
                 <article
