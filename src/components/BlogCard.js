@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
@@ -9,7 +10,6 @@ class BlogCard extends React.Component {
 
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-
     return (
       <div className="columns is-multiline">
         <div className="columns is-multiline">
