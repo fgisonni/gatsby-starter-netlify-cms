@@ -1,5 +1,5 @@
 ---
-templateKey: test-post
+templateKey: blog-post
 path: quick-start-guides
 title: Issa Post Hello
 date: 2016-12-17T15:04:10.000Z
