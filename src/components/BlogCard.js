@@ -5,10 +5,6 @@ import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 class BlogCard extends React.Component {
 
-  // componentDidMount(){
-  //   typeof window !== 'undefined' && window.location.pathname
-  // }
-
   render(props) {
 
     const { data } = this.props

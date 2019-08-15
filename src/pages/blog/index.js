@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import BlogCard from '../../components/BlogCard'
 
-class BlogIndexPage extends React.Component {
+export default class BlogIndexPage extends React.Component {
 
   render() {
 
@@ -20,5 +20,3 @@ class BlogIndexPage extends React.Component {
     )
   }
 }
-
-export default BlogIndexPage

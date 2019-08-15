@@ -1,7 +1,7 @@
 ---
-templateKey: blog-post
-path: 'test-page-2'
-title: Issa Post Again 2
+templateKey: test-post
+path: 'quick-start-guides'
+title: Issa Post
 date: 2016-12-17T15:04:10.000Z
 featuredpost: false
 featuredimage: /img/flavor_wheel.jpg

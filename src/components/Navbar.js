@@ -71,11 +71,9 @@ const Navbar = class extends React.Component {
             <Link className="navbar-item" to="/blog">
               Blog
             </Link>
-            <Link className="navbar-item" to="/test-page">
-              Test Page
-            </Link>
-            <Link className="navbar-item" to="/test-page-2">
-              Test Page 2
+            <p className="sidenav-font">Sugar Balance Program</p>
+            <Link className="navbar-item" to="/quick-start-guides">
+              Quick Start Guides
             </Link>
           </div>
         </nav>
