@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Layout from '../../components/Layout'
-import ImageBlogCard from '../../components/ImageBlogCard'
+import WeekCard from '../../components/WeekCard'
 
 export default class BlogIndexPage extends React.Component {
 
@@ -12,7 +12,7 @@ export default class BlogIndexPage extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content page-padding">
-              <ImageBlogCard />
+              <WeekCard />
             </div>
           </div>
         </section>

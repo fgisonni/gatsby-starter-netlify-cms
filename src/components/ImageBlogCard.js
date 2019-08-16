@@ -4,18 +4,18 @@ import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
-class BlogCard extends React.Component {
+class ImageBlogCard extends React.Component {
 
   render(props) {
 
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
     return (
-      <div className="columns is-multiline">
+      <div className="columns is-multiline is-mobile">
         {posts &&
           posts.map(({ node: post }) => (
-            typeof window !== 'undefined' && window.location.pathname === '/'+post.frontmatter.path || typeof window !== 'undefined' && window.location.pathname === '/'+post.frontmatter.path+'/' ?
-            <div key={post.id} className={`is-parent column is-6`}>
+
+            {/*<div key={post.id} className={`is-parent column is-4`}>
               <div>
                 <article
                   className={`blog-list-item tile is-child box ${
@@ -57,14 +57,32 @@ class BlogCard extends React.Component {
                 </article>
               </div>
             </div>
-            : null
+
+            style={`{ background-image: 'url(${post.frontmatter.featuredimage})' }`}*/},
+
+
+              <Link key={post.id} className="column is-one-quarter" to={post.fields.slug}>
+                {post.frontmatter.featuredimage ? (
+                  <div className="featured-thumbnail">
+                    <PreviewCompatibleImage
+                      imageInfo={{
+                        image: post.frontmatter.featuredimage,
+                        alt: `featured image thumbnail for post ${
+                          post.title
+                        }`,
+                      }}
+                    />
+                  </div>
+                ) : null}
+              </Link>
+
           ))}
       </div>
     )
   }
 }
 
-BlogCard.propTypes = {
+ImageBlogCard.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -72,10 +90,11 @@ BlogCard.propTypes = {
   }),
 }
 
+// filter: {frontmatter: { templateKey: { eq: "blog-card"} } }
 export default () => (
   <StaticQuery
     query={graphql`
-      query BlogCardQuery {
+      query ImageBlogCardQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
         ) {
@@ -106,7 +125,7 @@ export default () => (
       }
     `}
     render={
-      (data, count) => <BlogCard data={data} count={count} />
+      (data, count) => <ImageBlogCard data={data} count={count} />
     }
   />
 )

@@ -65,15 +65,29 @@ const Navbar = class extends React.Component {
           <div
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
+            <p className="navbar-item-title">Welcome</p>
             <Link className="navbar-item" to="/about">
               About
             </Link>
             <Link className="navbar-item" to="/blog">
               Blog
             </Link>
-            <p className="sidenav-font">Sugar Balance Program</p>
+            <p className="navbar-item-title">Sugar Balance Program</p>
             <Link className="navbar-item" to="/quick-start-guides">
               Quick Start Guides
+            </Link>
+            <Link className="navbar-item" to="/12-week-meal-plan">
+              12 Week Meal Plan
+            </Link>
+            <Link className="navbar-item">
+              Recipes
+            </Link>
+            <p className="navbar-item-title">Additional Bonuses</p>
+            <Link className="navbar-item">
+              Meditations
+            </Link>
+            <Link className="navbar-item">
+              Fitness
             </Link>
           </div>
         </nav>
