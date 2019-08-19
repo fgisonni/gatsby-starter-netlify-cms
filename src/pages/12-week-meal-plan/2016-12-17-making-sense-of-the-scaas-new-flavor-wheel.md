@@ -1,6 +1,6 @@
 ---
 templateKey: 12-week-meal-plan-post
-title: Monday
+title: Week 1
 date: 2016-12-17T15:04:10.000Z
 description: >-
   The Coffee Taster’s Flavor Wheel, the official resource used by coffee
@@ -15,6 +15,14 @@ days:
   - Friday
   - Saturday
   - Sunday
+  breakfast:
+    - What
+    - is
+    - Up
+    - my
+    - friend
+    - lets
+    - eat
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
 

@@ -14,6 +14,7 @@ export const WeekMealPlanTemplate = ({
   days,
   title,
   helmet,
+  posts
 }) => {
   const PostContent = contentComponent || Content
 
@@ -43,7 +44,7 @@ export const WeekMealPlanTemplate = ({
                   <div className="column is-one-quarter">
                     Dinner
                   </div>
-                  {console.log(days)}
+                  {console.log(posts)}
                 </div>
                 {/* Dynamic Columns*/}
                 {days && days.length ? (
@@ -54,13 +55,17 @@ export const WeekMealPlanTemplate = ({
                         {day}
                       </div>
                       <div className="column is-one-quarter">
-
+                        <Link>
+                          {day}
+                        </Link>
                       </div>
                       <div className="column is-one-quarter">
-
+                        <Link>
+                        </Link>
                       </div>
                       <div className="column is-one-quarter">
-
+                        <Link>
+                        </Link>
                       </div>
                     </div>
                   ))}
@@ -84,7 +89,6 @@ WeekMealPlanTemplate.propTypes = {
 
 const WeekMealPlan = ({ data }) => {
   const { markdownRemark: post } = data
-
   return (
     <Layout>
       <WeekMealPlanTemplate
@@ -100,8 +104,10 @@ const WeekMealPlan = ({ data }) => {
             />
           </Helmet>
         }
+        days={post.frontmatter.days}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        posts={post.frontmatter}
       />
     </Layout>
   )
@@ -125,6 +131,7 @@ export const pageQuery = graphql`
         title
         description
         tags
+        days
       }
     }
   }

@@ -52,6 +52,7 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Days of the Week", name: "days", widget: "list"}
+      - {label: "Breakfast", name: "breakfast", widget: "list"}
 
   - name: "pages"
     label: "Pages"
