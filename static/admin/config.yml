@@ -52,7 +52,6 @@ collections:
       - {label: "Breakfast", name: "breakfast", widget: "list"}
       - {label: "Lunch", name: "lunch", widget: "list"}
       - {label: "Dinner", name: "dinner", widget: "list"}
-      
 
   - name: "pages"
     label: "Pages"

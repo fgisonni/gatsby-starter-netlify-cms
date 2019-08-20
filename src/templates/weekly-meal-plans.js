@@ -13,6 +13,8 @@ export const WeeklyMealPlanTemplate = ({
   description,
   days,
   breakfast,
+  lunch,
+  dinner,
   title,
   helmet,
   tags
@@ -120,7 +122,7 @@ WeeklyMealPlan.propTypes = {
 
 export default WeeklyMealPlan
 
-export const weeklyPageQuery = graphql`
+export const pageQuery = graphql`
   query WeeklyMealPlanByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
@@ -132,6 +134,8 @@ export const weeklyPageQuery = graphql`
         description
         days
         breakfast
+        lunch
+        dinner
       }
     }
   }

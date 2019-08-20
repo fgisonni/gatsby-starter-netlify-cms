@@ -23,8 +23,6 @@ breakfast:
   - friend
   - lets
   - eat
-lunch:
-dinner:
 
 
 ---
