@@ -17,5 +17,4 @@ BlogPostPreview.propTypes = {
   }),
   widgetFor: PropTypes.func,
 }
-
 export default BlogPostPreview

@@ -7,8 +7,10 @@ const WeeklyMealPlanPreview = ({ entry, widgetFor }) => (
     content={widgetFor('body')}
     description={entry.getIn(['data', 'description'])}
     title={entry.getIn(['data', 'title'])}
+
     days={entry.getIn(['data', 'days'])}
     breakfast={entry.getIn(['data', 'breakfast'])}
+    lunch={entry.getIn(['data', 'lunch'])}
     dinner={entry.getIn(['data', 'dinner'])}
 
   />

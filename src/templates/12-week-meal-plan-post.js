@@ -17,7 +17,6 @@ export const WeeklyMealPlanTemplate = ({
   dinner,
   title,
   helmet,
-  posts
 }) => {
   const PostContent = contentComponent || Content
   return (
@@ -48,7 +47,7 @@ export const WeeklyMealPlanTemplate = ({
                   </div>
                 </div>
                 {/* Dynamic Columns*/}
-                  <div>
+                  <div className="table-inner">
                     <div className="columns">
                       {days && days.length ? (
                         <div className="column is-one-quarter">
@@ -61,7 +60,9 @@ export const WeeklyMealPlanTemplate = ({
                       {breakfast && breakfast.length ? (
                         <div className="column is-one-quarter">
                           {breakfast.map(morning => (
-                            <Link className="table-link" to={`${kebabCase(morning)}`} key={morning}>{ morning }</Link>
+                            <div key={morning}>
+                              <Link className="table-link" to={`${kebabCase(morning)}`}>{ morning }</Link>
+                            </div>
                           ))}
                         </div>
                       ): null}
@@ -102,7 +103,6 @@ WeeklyMealPlanTemplate.propTypes = {
 
 const WeeklyMealPlan = ({ data }) => {
   const { markdownRemark: post } = data
-  // console.log(post.frontmatter)
   return (
     <Layout>
       <WeeklyMealPlanTemplate
@@ -110,7 +110,7 @@ const WeeklyMealPlan = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | 12 Week Meal Plan">
+          <Helmet titleTemplate="%s | 12 Week Meal Guides">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
@@ -118,12 +118,11 @@ const WeeklyMealPlan = ({ data }) => {
             />
           </Helmet>
         }
-        posts={post.frontmatter}
+        title={post.frontmatter.title}
         days={post.frontmatter.days}
         breakfast={post.frontmatter.breakfast}
         lunch={post.frontmatter.lunch}
         dinner={post.frontmatter.dinner}
-        title={post.frontmatter.title}
       />
     </Layout>
   )
@@ -137,7 +136,7 @@ WeeklyMealPlan.propTypes = {
 
 export default WeeklyMealPlan
 
-export const pageQuery = graphql`
+export const weeklyPageQuery = graphql`
   query WeeklyMealPlanByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
