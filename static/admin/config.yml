@@ -53,6 +53,8 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Days of the Week", name: "days", widget: "list"}
       - {label: "Breakfast", name: "breakfast", widget: "list"}
+      - {label: "Lunch", name: "lunch", widget: "list"}
+      - {label: "Dinner", name: "dinner", widget: "list"}
 
   - name: "pages"
     label: "Pages"
