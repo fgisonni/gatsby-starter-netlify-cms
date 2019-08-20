@@ -19,10 +19,6 @@ exports.createPages = ({ actions, graphql }) => {
               tags
               templateKey
               path
-              days
-              breakfast
-              lunch
-              dinner
             }
           }
         }

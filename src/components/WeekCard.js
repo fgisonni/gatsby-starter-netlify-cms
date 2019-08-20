@@ -50,7 +50,7 @@ export default () => (
       query WeekCardQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "12-week-meal-plan-post" } } }
+          filter: { frontmatter: { templateKey: { eq: "weekly-meal-plans" } } }
         ) {
           edges {
             node {
