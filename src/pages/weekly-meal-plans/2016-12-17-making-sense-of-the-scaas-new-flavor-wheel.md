@@ -23,6 +23,22 @@ breakfast:
   - friend
   - lets
   - eat
+lunch:
+  - What
+  - is
+  - Up
+  - my
+  - friend
+  - lets
+  - eat  
+dinner:
+  - What
+  - is
+  - Up
+  - my
+  - friend
+  - lets
+  - eat  
 
 
 ---

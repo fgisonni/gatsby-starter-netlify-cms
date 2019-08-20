@@ -13,6 +13,8 @@ export const WeeklyMealPlanTemplate = ({
   description,
   days,
   breakfast,
+  lunch,
+  dinner,
   title,
   helmet,
   tags
@@ -66,6 +68,26 @@ export const WeeklyMealPlanTemplate = ({
                         </div>
                       ): null}
 
+                      {lunch && lunch.length ? (
+                        <div className="column is-one-quarter">
+                          {lunch.map(afternoon => (
+                            <div key={afternoon + `afternoon`}>
+                              <Link className="table-link" to={`${kebabCase(afternoon)}`}>{ afternoon }</Link>
+                            </div>
+                          ))}
+                        </div>
+                      ): null}
+
+                      {dinner && dinner.length ? (
+                        <div className="column is-one-quarter">
+                          {dinner.map(evening => (
+                            <div key={evening + `evening`}>
+                              <Link className="table-link" to={`${kebabCase(evening)}`}>{ evening }</Link>
+                            </div>
+                          ))}
+                        </div>
+                      ): null}
+
                     </div>
                 </div>
               </div>
@@ -103,8 +125,12 @@ const WeeklyMealPlan = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+
         days={post.frontmatter.days}
         breakfast={post.frontmatter.breakfast}
+        lunch={post.frontmatter.lunch}
+        dinner={post.frontmatter.dinner}
+
       />
     </Layout>
   )
@@ -118,7 +144,7 @@ WeeklyMealPlan.propTypes = {
 
 export default WeeklyMealPlan
 
-export const pageQuery = graphql`
+export const weeklyPageQuery = graphql`
   query WeeklyMealPlanByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
@@ -130,6 +156,8 @@ export const pageQuery = graphql`
         description
         days
         breakfast
+        lunch
+        dinner
       }
     }
   }
