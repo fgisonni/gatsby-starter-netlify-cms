@@ -15,14 +15,15 @@ days:
   - Friday
   - Saturday
   - Sunday
-  breakfast:
-    - What
-    - is
-    - Up
-    - my
-    - friend
-    - lets
-    - eat
+breakfast:
+  - What
+  - is
+  - Up
+  - my
+  - friend
+  - lets
+  - eat
+
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
 
