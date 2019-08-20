@@ -44,33 +44,44 @@ export const WeekMealPlanTemplate = ({
                   <div className="column is-one-quarter">
                     Dinner
                   </div>
-                  {console.log(breakfast)}
                 </div>
                 {/* Dynamic Columns*/}
-                {days && days.length ? (
                   <div>
-                    {days.map(day => (
-                    <div className="columns" key={day}>
-                      <div className="column is-one-quarter">
-                        {day}
-                      </div>
-                      <div className="column is-one-quarter">
-                        <Link>
-                          {day}
-                        </Link>
-                      </div>
-                      <div className="column is-one-quarter">
-                        <Link>
-                        </Link>
-                      </div>
-                      <div className="column is-one-quarter">
-                        <Link>
-                        </Link>
-                      </div>
+                    <div className="columns">
+                      {days && days.length ? (
+                        <div className="column is-one-quarter">
+                          {days.map(day => (
+                            <p key={day}>{day}</p>
+                          ))}
+                        </div>
+                      ): null}
+
+                      {breakfast && breakfast.length ? (
+                        <div className="column is-one-quarter">
+                          {breakfast.map(morning => (
+                            <Link className="table-link" to={`${kebabCase(morning)}`} key={morning}>{ morning }</Link>
+                          ))}
+                        </div>
+                      ): null}
+
+                      {days && days.length ? (
+                        <div className="column is-one-quarter">
+                          {days.map(day => (
+                            <Link className="table-link" key={day}>{day}</Link>
+                          ))}
+                        </div>
+                      ): null}
+
+                      {days && days.length ? (
+                        <div className="column is-one-quarter">
+                          {days.map(day => (
+                            <Link className="table-link" to={day} key={day}>{day}</Link>
+                          ))}
+                        </div>
+                      ): null}
+
                     </div>
-                  ))}
                 </div>
-                ): null}
               </div>
             </div>
           </div>
