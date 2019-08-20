@@ -11,13 +11,13 @@ export const WeekMealPlanTemplate = ({
   content,
   contentComponent,
   description,
-  table,
+  days,
+  breakfast,
   title,
   helmet,
   posts
 }) => {
   const PostContent = contentComponent || Content
-  
   return (
     <section className="section">
       {helmet || ''}
@@ -44,18 +44,19 @@ export const WeekMealPlanTemplate = ({
                   <div className="column is-one-quarter">
                     Dinner
                   </div>
+                  {console.log(breakfast)}
                 </div>
                 {/* Dynamic Columns*/}
-                {table && table.length ? (
+                {days && days.length ? (
                   <div>
-                    {table.map(item => (
-                    <div className="columns" key={item}>
+                    {days.map(day => (
+                    <div className="columns" key={day}>
                       <div className="column is-one-quarter">
-                        {console.log(item.days)}
-                        {item.days}
+                        {day}
                       </div>
                       <div className="column is-one-quarter">
                         <Link>
+                          {day}
                         </Link>
                       </div>
                       <div className="column is-one-quarter">
@@ -88,6 +89,7 @@ WeekMealPlanTemplate.propTypes = {
 
 const WeekMealPlan = ({ data }) => {
   const { markdownRemark: post } = data
+  // console.log(post.frontmatter)
   return (
     <Layout>
       <WeekMealPlanTemplate
@@ -103,7 +105,8 @@ const WeekMealPlan = ({ data }) => {
             />
           </Helmet>
         }
-        table={post.frontmatter.table}
+        days={post.frontmatter.days}
+        breakfast={post.frontmatter.breakfast}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         posts={post.frontmatter}
@@ -130,10 +133,8 @@ export const pageQuery = graphql`
         title
         description
         tags
-        table{
-          breakfast
-          days
-        }
+        days
+        breakfast
       }
     }
   }
