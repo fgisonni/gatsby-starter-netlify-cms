@@ -7,22 +7,24 @@ description: >-
   tasters, has been revised for the first time this year. hello
 featuredpost: false
 featuredimage: /img/flavor_wheel.jpg
-days:
-  - Monday
-  - Tuesday
-  - Wednesday
-  - Thursday
-  - Friday
-  - Saturday
-  - Sunday
-breakfast:
-  - What
-  - is
-  - Up
-  - my
-  - friend
-  - lets
-  - eat
+
+table:
+  days:
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    - Sunday
+  breakfast:
+    - What
+    - is
+    - Up
+    - my
+    - friend
+    - lets
+    - eat
 
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
