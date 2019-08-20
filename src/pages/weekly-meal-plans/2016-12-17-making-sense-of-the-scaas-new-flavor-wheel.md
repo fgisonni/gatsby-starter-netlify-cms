@@ -23,6 +23,9 @@ breakfast:
   - friend
   - lets
   - eat
+lunch:
+dinner:
+
 
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)

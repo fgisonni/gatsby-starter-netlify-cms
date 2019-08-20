@@ -13,8 +13,6 @@ export const WeeklyMealPlanTemplate = ({
   description,
   days,
   breakfast,
-  lunch,
-  dinner,
   title,
   helmet,
   tags
@@ -62,24 +60,8 @@ export const WeeklyMealPlanTemplate = ({
                         <div className="column is-one-quarter">
                           {breakfast.map(morning => (
                             <div key={morning + `morning`}>
-                              <Link className="table-link" to={`/weekly-meal-plans/${kebabCase(morning)}`}>{ morning }</Link>
+                              <Link className="table-link" to={`${kebabCase(morning)}`}>{ morning }</Link>
                             </div>
-                          ))}
-                        </div>
-                      ): null}
-
-                      {lunch && lunch.length ? (
-                        <div className="column is-one-quarter">
-                          {lunch.map(afternoon => (
-                            <Link className="table-link" to={`${kebabCase(afternoon)}`}>{afternoon}</Link>
-                          ))}
-                        </div>
-                      ): null}
-
-                      {dinner && dinner.length ? (
-                        <div className="column is-one-quarter">
-                          {dinner.map(evening => (
-                            <Link className="table-link" to={`${kebabCase(evening)}`} key={evening}>{evening}</Link>
                           ))}
                         </div>
                       ): null}
@@ -150,8 +132,6 @@ export const weeklyPageQuery = graphql`
         description
         days
         breakfast
-        lunch
-        dinner
       }
     }
   }
