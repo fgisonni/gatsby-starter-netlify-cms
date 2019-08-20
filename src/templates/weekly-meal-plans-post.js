@@ -13,8 +13,6 @@ export const WeeklyMealPlanTemplate = ({
   description,
   days,
   breakfast,
-  lunch,
-  dinner,
   title,
   helmet,
   tags
@@ -107,8 +105,6 @@ const WeeklyMealPlan = ({ data }) => {
         title={post.frontmatter.title}
         days={post.frontmatter.days}
         breakfast={post.frontmatter.breakfast}
-        lunch={post.frontmatter.lunch}
-        dinner={post.frontmatter.dinner}
       />
     </Layout>
   )
@@ -134,8 +130,6 @@ export const pageQuery = graphql`
         description
         days
         breakfast
-        lunch
-        dinner
       }
     }
   }
