@@ -40,11 +40,11 @@ collections:
 
   - name: "week"
     label: "12 Week Meal Guides"
-    folder: "src/pages/quick-start-guides"
+    folder: "src/pages/weekly-meal-plans
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "12-week-meal-plan-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "weekly-meal-plans"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}

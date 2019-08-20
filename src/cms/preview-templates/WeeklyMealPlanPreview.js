@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { WeeklyMealPlanTemplate } from '../../templates/12-week-meal-plan-post'
+import { WeeklyMealPlanTemplate } from '../../templates/weekly-meal-plans'
 
 const WeeklyMealPlanPreview = ({ entry, widgetFor }) => (
   <WeeklyMealPlanTemplate

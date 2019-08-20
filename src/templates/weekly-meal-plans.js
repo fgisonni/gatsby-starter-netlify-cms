@@ -17,6 +17,7 @@ export const WeeklyMealPlanTemplate = ({
   dinner,
   title,
   helmet,
+  tags
 }) => {
   const PostContent = contentComponent || Content
   return (
@@ -60,8 +61,8 @@ export const WeeklyMealPlanTemplate = ({
                       {breakfast && breakfast.length ? (
                         <div className="column is-one-quarter">
                           {breakfast.map(morning => (
-                            <div key={morning}>
-                              <Link className="table-link" to={`${kebabCase(morning)}`}>{ morning }</Link>
+                            <div key={morning + `morning`}>
+                              <Link className="table-link" to={`/12-week-meal-plan/${kebabCase(morning)}`}>{ morning }</Link>
                             </div>
                           ))}
                         </div>
@@ -118,6 +119,7 @@ const WeeklyMealPlan = ({ data }) => {
             />
           </Helmet>
         }
+        tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         days={post.frontmatter.days}
         breakfast={post.frontmatter.breakfast}
@@ -143,6 +145,7 @@ export const weeklyPageQuery = graphql`
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
+        tags
         title
         description
         days
