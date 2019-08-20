@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { QuickStartGuidesTemplate } from '../../templates/quick-start-guides'
+import { WeeklyMealPlan } from '../../templates/weekly-meal-plan-post'
 
-const QuickStartGuidesPreview = ({ entry, widgetFor }) => (
-  <QuickStartGuidesTemplate
+const WeeklyMealPlanPreview = ({ entry, widgetFor }) => (
+  <WeeklyMealPlan
     content={widgetFor('body')}
     description={entry.getIn(['data', 'description'])}
     tags={entry.getIn(['data', 'tags'])}
@@ -11,11 +11,11 @@ const QuickStartGuidesPreview = ({ entry, widgetFor }) => (
   />
 )
 
-QuickStartGuidesPreview.propTypes = {
+WeeklyMealPlanPreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
   widgetFor: PropTypes.func,
 }
 
-export default QuickStartGuidesPreview
+export default WeeklyMealPlanPreview

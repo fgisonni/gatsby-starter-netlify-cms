@@ -7,12 +7,14 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const WeekMealPlanTemplate = ({
+export const WeeklyMealPlanTemplate = ({
   content,
   contentComponent,
   description,
   days,
   breakfast,
+  lunch,
+  dinner,
   title,
   helmet,
   posts
@@ -28,7 +30,7 @@ export const WeekMealPlanTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
-            {/*<PostContent content={content} />*/}
+            <PostContent content={content} />
               <div className="table is-full">
                 {/* Static Columns */}
                 <div className="columns">
@@ -64,18 +66,18 @@ export const WeekMealPlanTemplate = ({
                         </div>
                       ): null}
 
-                      {days && days.length ? (
+                      {lunch && lunch.length ? (
                         <div className="column is-one-quarter">
-                          {days.map(day => (
-                            <Link className="table-link" key={day}>{day}</Link>
+                          {lunch.map(afternoon => (
+                            <Link className="table-link" to={`${kebabCase(afternoon)}`}>{afternoon}</Link>
                           ))}
                         </div>
                       ): null}
 
-                      {days && days.length ? (
+                      {dinner && dinner.length ? (
                         <div className="column is-one-quarter">
-                          {days.map(day => (
-                            <Link className="table-link" to={day} key={day}>{day}</Link>
+                          {dinner.map(evening => (
+                            <Link className="table-link" to={`${kebabCase(evening)}`} key={evening}>{evening}</Link>
                           ))}
                         </div>
                       ): null}
@@ -90,7 +92,7 @@ export const WeekMealPlanTemplate = ({
   )
 }
 
-WeekMealPlanTemplate.propTypes = {
+WeeklyMealPlanTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -98,12 +100,12 @@ WeekMealPlanTemplate.propTypes = {
   helmet: PropTypes.object,
 }
 
-const WeekMealPlan = ({ data }) => {
+const WeeklyMealPlan = ({ data }) => {
   const { markdownRemark: post } = data
   // console.log(post.frontmatter)
   return (
     <Layout>
-      <WeekMealPlanTemplate
+      <WeeklyMealPlanTemplate
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
@@ -118,7 +120,8 @@ const WeekMealPlan = ({ data }) => {
         }
         days={post.frontmatter.days}
         breakfast={post.frontmatter.breakfast}
-        tags={post.frontmatter.tags}
+        lunch={post.frontmatter.lunch}
+        dinner={post.frontmatter.dinner}
         title={post.frontmatter.title}
         posts={post.frontmatter}
       />
@@ -126,16 +129,16 @@ const WeekMealPlan = ({ data }) => {
   )
 }
 
-WeekMealPlan.propTypes = {
+WeeklyMealPlan.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 }
 
-export default WeekMealPlan
+export default WeeklyMealPlan
 
 export const pageQuery = graphql`
-  query WeekMealPlanByID($id: String!) {
+  query WeeklyMealPlanByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
@@ -143,9 +146,10 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
-        tags
         days
         breakfast
+        lunch
+        dinner
       }
     }
   }
