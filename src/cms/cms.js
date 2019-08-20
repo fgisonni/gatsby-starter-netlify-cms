@@ -17,4 +17,4 @@ CMS.registerPreviewTemplate('about', AboutPagePreview)
 CMS.registerPreviewTemplate('products', ProductPagePreview)
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
 
-CMS.registerPreviewTemplate('weekly-meal-plan-post', WeeklyMealPlanPreview)
+CMS.registerPreviewTemplate('12-week-meal-plan', WeeklyMealPlanPreview)
