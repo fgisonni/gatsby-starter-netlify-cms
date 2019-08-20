@@ -39,8 +39,8 @@ collections:
       - {label: "Path", name: "path", widget: "string"}
 
   - name: "week"
-    label: "12 Week Meal Guides"
-    folder: "src/pages/weekly-meal-plans
+    label: "Weekly Meal Plans"
+    folder: "src/pages/weekly-meal-plans"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:

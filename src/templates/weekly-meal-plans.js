@@ -62,7 +62,7 @@ export const WeeklyMealPlanTemplate = ({
                         <div className="column is-one-quarter">
                           {breakfast.map(morning => (
                             <div key={morning + `morning`}>
-                              <Link className="table-link" to={`/12-week-meal-plan/${kebabCase(morning)}`}>{ morning }</Link>
+                              <Link className="table-link" to={`/weekly-meal-plans/${kebabCase(morning)}`}>{ morning }</Link>
                             </div>
                           ))}
                         </div>
@@ -111,7 +111,7 @@ const WeeklyMealPlan = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | 12 Week Meal Guides">
+          <Helmet titleTemplate="%s | Weekly Meal Plans">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
