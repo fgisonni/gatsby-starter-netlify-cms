@@ -118,12 +118,12 @@ const WeeklyMealPlan = ({ data }) => {
             />
           </Helmet>
         }
+        posts={post.frontmatter}
         days={post.frontmatter.days}
         breakfast={post.frontmatter.breakfast}
         lunch={post.frontmatter.lunch}
         dinner={post.frontmatter.dinner}
         title={post.frontmatter.title}
-        posts={post.frontmatter}
       />
     </Layout>
   )
