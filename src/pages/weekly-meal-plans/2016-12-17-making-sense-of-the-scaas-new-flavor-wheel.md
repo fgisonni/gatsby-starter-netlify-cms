@@ -1,5 +1,5 @@
 ---
-templateKey: weekly-meal-plans
+templateKey: weekly-meal-plans-post
 title: Week 1
 date: 2016-12-17T15:04:10.000Z
 description: >-
