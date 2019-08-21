@@ -38,9 +38,9 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Path", name: "path", widget: "string"}
 
-  - name: "week"
+  - name: "weekly-meal-plans"
     label: "Weekly Meal Plans"
-    folder: "src/pages/weekly-meal-plans-post"
+    folder: "src/pages/weekly-meal-plans"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
