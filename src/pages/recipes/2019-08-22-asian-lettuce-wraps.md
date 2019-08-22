@@ -3,8 +3,6 @@ templateKey: blog-post
 title: Asian Lettuce Wraps
 date: 2019-08-22T15:49:53.824Z
 featuredimage: /img/asian_lettuce_wraps.png
-tags:
-  - ''
 path: recipes
 ---
 ## INGREDIENTS
