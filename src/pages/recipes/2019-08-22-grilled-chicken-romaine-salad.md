@@ -2,10 +2,10 @@
 templateKey: blog-post
 title: Grilled Chicken Romaine Salad
 date: 2019-08-22T19:34:19.592Z
-featuredimage: /img/grilled_chicken_salad.png
+featuredimage: /img/grilled-romaine-salad.png
 path: recipes
 ---
-![Grilled Chicken Romaine Salad](/img/grilled_chicken_salad.png)
+![Grilled Chicken Romaine Salad](/img/grilled-romaine-salad.png)
 
 ## INGREDIENTS
 
