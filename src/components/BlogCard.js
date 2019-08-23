@@ -20,13 +20,19 @@ class BlogCard extends React.Component {
                   className={`blog-list-item tile is-child box blog-link-card-article ${
                     post.frontmatter.featuredpost ? 'is-featured' : ''
                   }`}
-                  style={{
-                     backgroundImage: `url(${post.frontmatter.featuredimage.publicURL})`,
-                     backgroundSize: `cover`,
-                     backgroundPosition: `center`,
-                     backgroundRepeat: `no-repeat`,
-                   }}
                 >
+                <header>
+                  {post.frontmatter.featuredimage ? (
+                      <PreviewCompatibleImage
+                        imageInfo={{
+                          image: post.frontmatter.featuredimage,
+                          alt: `featured image thumbnail for post ${
+                            post.title
+                          }`,
+                        }}
+                      />
+                  ) : null}
+                </header>
                   <div className="card-content">
                     <p className="post-meta">
                       <Link
