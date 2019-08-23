@@ -73,6 +73,9 @@ const Navbar = class extends React.Component {
               Blog
             </Link>
             <p className="navbar-item-title">Sugar Balance Program</p>
+            <Link className="navbar-item" to="/quick-start-guides">
+              Quick Start Guides
+            </Link>
             <Link className="navbar-item" to="/weekly-meal-plans">
               12 Week Meal Plan
             </Link>

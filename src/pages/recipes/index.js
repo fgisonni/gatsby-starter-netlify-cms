@@ -3,16 +3,14 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import BlogCard from '../../components/BlogCard'
 
-export default class QuickStartGuidesPage extends React.Component {
+export default class RecipesPage extends React.Component {
 
   render(props) {
     return (
       <Layout>
-        <section className="section">
-          <div className="container">
-            <div className="content page-padding">
-              <BlogCard />
-            </div>
+        <section className="section recipes">
+          <div className="container content page-padding">
+            <BlogCard />
           </div>
         </section>
       </Layout>

@@ -9,6 +9,7 @@ import IndexPagePreview from './preview-templates/IndexPagePreview'
 
 import WeeklyMealPlanPreview from './preview-templates/WeeklyMealPlanPreview'
 import RecipesPostPreview from './preview-templates/RecipesPostPreview'
+import QuickStartGuidesPostPreview from './preview-templates/QuickStartGuidesPreview'
 
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
@@ -20,3 +21,4 @@ CMS.registerPreviewTemplate('blog', BlogPostPreview)
 
 CMS.registerPreviewTemplate('weekly-meal-plans', WeeklyMealPlanPreview)
 CMS.registerPreviewTemplate('recipes', RecipesPostPreview)
+CMS.registerPreviewTemplate('quick', QuickStartGuidesPostPreview)

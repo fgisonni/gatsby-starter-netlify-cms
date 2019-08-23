@@ -19,9 +19,10 @@ $black: #2b2523
 
 .container
   margin: 0;
+  max-width: 1000px;
 
 .page-padding
-  padding: 3rem 5rem 0 ;
+  padding: 3rem 5rem 0 3rem;
 
 .navigation-padding
   padding: 0 3.5rem;
@@ -36,6 +37,36 @@ $black: #2b2523
   right: 0;
   background: #ccc;
   z-index: 10;
+
+.blog-link-card
+  width: 50%;
+  height: 375px;
+  flex: none;
+  position: relative;
+  padding: 0 0.75rem;
+  margin: 0 0 1.5rem;
+  transition: all .3s ease;
+  transform: translateY(0);
+  &:hover
+    transform: translateY(-0.3rem);
+    .blog-link-card-article
+      box-shadow: 0 7px 13px 3px rgba(43, 37, 35, 0.1), 0 0 0 1px rgba(43, 37, 35, 0.1);
+  .blog-link-card-article
+    position: relative;
+    height: inherit;
+    padding: 0;
+    transition: all .5s;
+    .card-content
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      display: block;
+      margin: auto;
+      width: calc(100%);
+      background: rgba(255, 255, 255, .9);
+      padding: 1rem .5em;
+      border-radius: 0 0 6px 6px;
 
 .side-navbar
   height: 100%;
@@ -89,10 +120,19 @@ $black: #2b2523
         align-items: center;
         justify-content: center;
 
+.recipes
+  .blog-link-card
+    width: 25%;
+    height: 275px;
+
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
     flex-basis: 50%;
+
+  .blog-link-card
+    flex: none;
+    width: 50%;
 
 +mobile
   .blog-list-item header
@@ -101,3 +141,7 @@ $black: #2b2523
     text-align: center;
     max-width: 70%;
     margin: 0 0 1em;
+
+  .blog-link-card
+    flex: none;
+    width: 100%;

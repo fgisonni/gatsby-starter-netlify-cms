@@ -23,76 +23,72 @@ export const WeeklyMealPlanTemplate = ({
   return (
     <section className="section">
       {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-              <div className="table is-full">
-                {/* Static Columns */}
+      <div className="container content page-padding">
+        <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+          {title}
+        </h1>
+        <p>{description}</p>
+        <PostContent content={content} />
+          <div className="table is-full">
+            {/* Static Columns */}
+            <div className="columns">
+              <div className="column is-one-quarter">
+                Week 1
+              </div>
+              <div className="column is-one-quarter">
+                Breakfast
+              </div>
+              <div className="column is-one-quarter">
+                Lunch
+              </div>
+              <div className="column is-one-quarter">
+                Dinner
+              </div>
+            </div>
+            {/* Dynamic Columns*/}
+              <div className="table-inner">
                 <div className="columns">
-                  <div className="column is-one-quarter">
-                    Week 1
-                  </div>
-                  <div className="column is-one-quarter">
-                    Breakfast
-                  </div>
-                  <div className="column is-one-quarter">
-                    Lunch
-                  </div>
-                  <div className="column is-one-quarter">
-                    Dinner
-                  </div>
-                </div>
-                {/* Dynamic Columns*/}
-                  <div className="table-inner">
-                    <div className="columns">
-                      {days && days.length ? (
-                        <div className="column is-one-quarter">
-                          {days.map(day => (
-                            <p key={day}>{day}</p>
-                          ))}
-                        </div>
-                      ): null}
-
-                      {breakfast && breakfast.length ? (
-                        <div className="column is-one-quarter">
-                          {breakfast.map(morning => (
-                            <div key={morning + `morning`}>
-                              <Link className="table-link" to={`${kebabCase(morning)}`}>{ morning }</Link>
-                            </div>
-                          ))}
-                        </div>
-                      ): null}
-
-                      {lunch && lunch.length ? (
-                        <div className="column is-one-quarter">
-                          {lunch.map(afternoon => (
-                            <div key={afternoon + `afternoon`}>
-                              <Link className="table-link" to={`${kebabCase(afternoon)}`}>{ afternoon }</Link>
-                            </div>
-                          ))}
-                        </div>
-                      ): null}
-
-                      {dinner && dinner.length ? (
-                        <div className="column is-one-quarter">
-                          {dinner.map(evening => (
-                            <div key={evening + `evening`}>
-                              <Link className="table-link" to={`${kebabCase(evening)}`}>{ evening }</Link>
-                            </div>
-                          ))}
-                        </div>
-                      ): null}
-
+                  {days && days.length ? (
+                    <div className="column is-one-quarter">
+                      {days.map(day => (
+                        <p key={day}>{day}</p>
+                      ))}
                     </div>
+                  ): null}
+
+                  {breakfast && breakfast.length ? (
+                    <div className="column is-one-quarter">
+                      {breakfast.map(morning => (
+                        <div key={morning + `morning`}>
+                          <Link className="table-link" to={`${kebabCase(morning)}`}>{ morning }</Link>
+                        </div>
+                      ))}
+                    </div>
+                  ): null}
+
+                  {lunch && lunch.length ? (
+                    <div className="column is-one-quarter">
+                      {lunch.map(afternoon => (
+                        <div key={afternoon + `afternoon`}>
+                          <Link className="table-link" to={`${kebabCase(afternoon)}`}>{ afternoon }</Link>
+                        </div>
+                      ))}
+                    </div>
+                  ): null}
+
+                  {dinner && dinner.length ? (
+                    <div className="column is-one-quarter">
+                      {dinner.map(evening => (
+                        <div key={evening + `evening`}>
+                          <Link className="table-link" to={`${kebabCase(evening)}`}>{ evening }</Link>
+                        </div>
+                      ))}
+                    </div>
+                  ): null}
+
                 </div>
               </div>
             </div>
-          </div>
       </div>
     </section>
   )

@@ -15,28 +15,19 @@ class BlogCard extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             typeof window !== 'undefined' && window.location.pathname === '/'+post.frontmatter.path || typeof window !== 'undefined' && window.location.pathname === '/'+post.frontmatter.path+'/' ?
-            <div key={post.id} className={`is-parent column is-6`}>
-              <div>
+            <Link key={post.id} className={`is-parent column blog-link-card`} to={post.fields.slug}>
                 <article
-                  className={`blog-list-item tile is-child box ${
+                  className={`blog-list-item tile is-child box blog-link-card-article ${
                     post.frontmatter.featuredpost ? 'is-featured' : ''
                   }`}
+                  style={{
+                     backgroundImage: `url(${post.frontmatter.featuredimage.publicURL})`,
+                     backgroundSize: `cover`,
+                     backgroundPosition: `center`,
+                     backgroundRepeat: `no-repeat`,
+                   }}
                 >
-                  <header>
-                    {post.frontmatter.featuredimage ? (
-                      <div className="featured-thumbnail">
-                        <PreviewCompatibleImage
-                          imageInfo={{
-                            image: post.frontmatter.featuredimage,
-                            alt: `featured image thumbnail for post ${
-                              post.title
-                            }`,
-                          }}
-                        />
-                      </div>
-                    ) : null}
-                  </header>
-                  <div className="">
+                  <div className="card-content">
                     <p className="post-meta">
                       <Link
                         className="title has-text-primary is-size-4"
@@ -46,17 +37,11 @@ class BlogCard extends React.Component {
                       </Link>
                     </p>
                     <p>
-                      {post.excerpt}
-                      <br />
-                      <br />
-                      <Link className="button" to={post.fields.slug}>
-                        Keep Reading →
-                      </Link>
+                      {post.frontmatter.description}
                     </p>
                   </div>
                 </article>
-              </div>
-            </div>
+            </Link>
             : null
           ))}
       </div>
@@ -93,6 +78,7 @@ export default () => (
                 featuredpost
                 path
                 featuredimage {
+                  publicURL
                   childImageSharp {
                     fluid(maxWidth: 120, quality: 100) {
                       ...GatsbyImageSharpFluid
