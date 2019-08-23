@@ -50,7 +50,6 @@ export const IndexPageTemplate = ({
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest stories
                   </h3>
-                  <BlogCard/>
                 </div>
               </div>
             </div>
