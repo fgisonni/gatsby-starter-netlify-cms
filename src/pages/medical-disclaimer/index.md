@@ -1,6 +1,6 @@
 ---
-templateKey: 'about-page'
-path: /about
+templateKey: 'medical-disclaimer-page'
+path: /medical-disclaimer
 title: About our values
 ---
 ### Shade-grown coffee
