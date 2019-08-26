@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/logo.svg'
+import logo from '../img/sb-logo.png'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -42,7 +42,7 @@ const Navbar = class extends React.Component {
         >
           <div className="navigation-padding">
             <div className="navbar-brand">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+              <img src={logo} alt="Kaldi" style={{ width: '210px', height: 'auto' }} />
               {/* Hamburger menu */}
               <div
                 className={`navbar-burger burger ${this.state.navBarActiveClass}`}
