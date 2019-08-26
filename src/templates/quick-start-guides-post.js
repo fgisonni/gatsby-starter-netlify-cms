@@ -19,7 +19,7 @@ export const QuickStartGuidesTemplate = ({
     <section className="section">
       {helmet || ''}
       <div className="container content page-padding">
-        <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+        <h1 className="title is-size-5 is-bold-light">
           {title}
         </h1>
         <p>{description}</p>

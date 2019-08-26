@@ -15,17 +15,23 @@ $black: #2b2523
 @import "~bulma"
 
 .section
-  padding: 3.5rem 0 3.5rem 20rem;
+  padding: 3.5rem 0 ;
 
 .container
   margin: 0;
-  max-width: 1000px;
+  max-width: 100%;
 
 .page-padding
-  padding: 3rem 5rem 0 3rem;
+  padding: 3rem;
 
 .navigation-padding
   padding: 0 3.5rem;
+
+h2,
+h3,
+.has-text-primary
+  color: #009a97 !important;
+  font-weight: bold !important;
 
 .main-navbar,
 .side-navbar
@@ -35,46 +41,22 @@ $black: #2b2523
   top: 0;
   left: 0;
   right: 0;
-  background: #ccc;
+  background: #018280;
   z-index: 10;
-
-.blog-link-card
-  width: 50%;
-  height: 375px;
-  flex: none;
-  position: relative;
-  padding: 0 0.75rem;
-  margin: 0 0 1.5rem;
-  transition: all .3s ease;
-  transform: translateY(0);
-  &:hover
-    transform: translateY(-0.3rem);
-    .blog-link-card-article
-      box-shadow: 0 7px 13px 3px rgba(43, 37, 35, 0.1), 0 0 0 1px rgba(43, 37, 35, 0.1);
-  .blog-link-card-article
-    position: relative;
-    height: inherit;
-    padding: 0;
-    transition: all .5s;
-    .card-content
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      display: block;
-      margin: auto;
-      width: calc(100%);
-      background: rgba(255, 255, 255, .9);
-      padding: 1rem .5em;
-      border-radius: 0 0 6px 6px;
+  height: 75px;
+  display: flex;
+  flex: 1 100%;
+  align-items: center;
+  justify-content: space-between;
 
 .side-navbar
   height: 100%;
-  width: 20rem;
-  left: 0;
+  width: 17.3rem;
+  left: -17.3rem;
   top: 0;
-  background: #242424;
-  padding: 6rem 3rem 0;
+  background: #009a97;
+  padding: 6rem 1.7rem 0;
+  transition: all .5s ease;
   .navbar-menu
     display: block;
     background: transparent;
@@ -91,9 +73,46 @@ $black: #2b2523
       transition: .3s all;
       margin: .5rem 0;
       padding: .35rem .75rem;
-      &:hover
-        background: #ccc;
-        color: #242424;
+      &:hover,
+      &:focus,
+      &:focus-within
+        background: #018280;
+        color: #fff;
+        outline: none;
+
+
+.image-link-card,
+.blog-link-card
+  width: 100%;
+  height: 275px;
+  flex: none;
+  position: relative;
+  padding: 0 0.75rem;
+  margin: 0 0 1.5rem;
+  transition: all .2s ease-in-out;
+  transform: translateY(0);
+  &:hover
+    transform: translateY(-0.25rem);
+    .blog-link-card-article
+      box-shadow: 0 4px 15px 1px rgba(43, 37, 35, 0.15), 0 0 0 1px rgba(0, 154, 151, 0.5);
+  .blog-link-card-article
+    position: relative;
+    height: inherit;
+    padding: 0;
+    transition: all .5s;
+    p
+      margin-bottom: 0.3em;
+    .card-content
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      display: block;
+      margin: auto;
+      width: calc(100%);
+      background: rgba(255, 255, 255, .9);
+      padding: 1rem .5em;
+      border-radius: 0 0 6px 6px;
 
 .week-block
   flex: 1 100%;
@@ -120,28 +139,42 @@ $black: #2b2523
         align-items: center;
         justify-content: center;
 
-.recipes
-  .blog-link-card
-    width: 25%;
-    height: 275px;
 
-// responsiveness
-+tablet-only
+.content
+  h1
+    font-size: 1rem ;
+    color: white;
+    background: #009a97;
+    border-radius: 6px;
+    padding: .5rem;
+
+//Tablet
+@media (min-width: 728px)
+
   .blog-list-item .featured-thumbnail
     flex-basis: 50%;
 
+  .recipes .blog-link-card,
   .blog-link-card
     flex: none;
     width: 50%;
 
-+mobile
-  .blog-list-item header
-    display: block
-  .blog-list-item .featured-thumbnail
-    text-align: center;
-    max-width: 70%;
-    margin: 0 0 1em;
+  .columns.is-multiline
+    display: flex;
 
-  .blog-link-card
-    flex: none;
-    width: 100%;
+@media (min-width: 1024px)
+  .section
+    padding: 3.5rem 0 3.5rem 17.3rem;
+  .container
+    margin: 0;
+    max-width: 1000px;
+  .side-navbar
+    left: 0rem;
+  .page-padding
+    padding: 3rem 5rem 0 3rem;
+
+@media (min-width: 1140px)
+  .recipes
+    .blog-link-card
+      width: 25%;
+      height: 275px;
