@@ -21,26 +21,21 @@ class BlogCard extends React.Component {
                     post.frontmatter.featuredpost ? 'is-featured' : ''
                   }`}
                 >
-                <header>
-                  {post.frontmatter.featuredimage ? (
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${
-                            post.title
-                          }`,
-                        }}
-                      />
-                  ) : null}
-                </header>
+                  <header>
+                    {post.frontmatter.featuredimage ? (
+                        <PreviewCompatibleImage
+                          imageInfo={{
+                            image: post.frontmatter.featuredimage,
+                            alt: `featured image thumbnail for post ${
+                              post.title
+                            }`,
+                          }}
+                        />
+                    ) : null}
+                  </header>
                   <div className="card-content">
-                    <p className="post-meta">
-                      <Link
-                        className="title has-text-primary is-size-4"
-                        to={post.fields.slug}
-                      >
-                        {post.frontmatter.title}
-                      </Link>
+                    <p className="post-meta title has-text-primary is-size-4">
+                      {post.frontmatter.title}
                     </p>
                     <p>
                       {post.frontmatter.description}
@@ -72,7 +67,7 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 150)
+              excerpt(pruneLength: 100)
               id
               fields {
                 slug
@@ -83,6 +78,7 @@ export default () => (
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
                 path
+                description
                 featuredimage {
                   publicURL
                   childImageSharp {

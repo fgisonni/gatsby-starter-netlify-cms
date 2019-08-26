@@ -11,20 +11,18 @@ class ImageBlogCard extends React.Component {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
     return (
-      <div className="columns is-multiline is-mobile">
+      <div className="columns is-multiline">
         {posts &&
           posts.map(({ node: post }) => (
-
-            {/*<div key={post.id} className={`is-parent column is-4`}>
-              <div>
+            typeof window !== 'undefined' && window.location.pathname === '/'+post.frontmatter.path || typeof window !== 'undefined' && window.location.pathname === '/'+post.frontmatter.path+'/' ?
+            <Link key={post.id} className={`is-parent column blog-link-card`} to={post.fields.slug}>
                 <article
-                  className={`blog-list-item tile is-child box ${
+                  className={`blog-list-item tile is-child box blog-link-card-article ${
                     post.frontmatter.featuredpost ? 'is-featured' : ''
                   }`}
                 >
                   <header>
                     {post.frontmatter.featuredimage ? (
-                      <div className="featured-thumbnail">
                         <PreviewCompatibleImage
                           imageInfo={{
                             image: post.frontmatter.featuredimage,
@@ -33,49 +31,11 @@ class ImageBlogCard extends React.Component {
                             }`,
                           }}
                         />
-                      </div>
                     ) : null}
                   </header>
-                  <div className="">
-                    <p className="post-meta">
-                      <Link
-                        className="title has-text-primary is-size-4"
-                        to={post.fields.slug}
-                      >
-                        {post.frontmatter.title}
-                      </Link>
-                    </p>
-                    <p>
-                      {post.excerpt}
-                      <br />
-                      <br />
-                      <Link className="button" to={post.fields.slug}>
-                        Keep Reading →
-                      </Link>
-                    </p>
-                  </div>
                 </article>
-              </div>
-            </div>
-
-            style={`{ background-image: 'url(${post.frontmatter.featuredimage})' }`}*/},
-
-
-              <Link key={post.id} className="column is-one-quarter" to={post.fields.slug}>
-                {post.frontmatter.featuredimage ? (
-                  <div className="featured-thumbnail">
-                    <PreviewCompatibleImage
-                      imageInfo={{
-                        image: post.frontmatter.featuredimage,
-                        alt: `featured image thumbnail for post ${
-                          post.title
-                        }`,
-                      }}
-                    />
-                  </div>
-                ) : null}
-              </Link>
-
+            </Link>
+            : null
           ))}
       </div>
     )
