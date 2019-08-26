@@ -30,7 +30,7 @@ Below we have included a guide you can print out for your doctor so that they ca
 
 
 
-MEDICAL DISCLAIMER 
+## MEDICAL DISCLAIMER 
 
 WITH REGARDS TO CONTENT RELATING TO HEALTH & WELLNESS ON THE SITE: 
 
