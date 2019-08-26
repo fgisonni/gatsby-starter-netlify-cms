@@ -15,7 +15,7 @@ class ImageBlogCard extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             typeof window !== 'undefined' && window.location.pathname === '/'+post.frontmatter.path || typeof window !== 'undefined' && window.location.pathname === '/'+post.frontmatter.path+'/' ?
-            <Link key={post.id} className={`is-parent column blog-link-card`} to={post.fields.slug}>
+            <Link key={post.id} className={`is-parent column image-link-card`} to={post.fields.slug}>
                 <article
                   className={`blog-list-item tile is-child box blog-link-card-article ${
                     post.frontmatter.featuredpost ? 'is-featured' : ''
