@@ -12,15 +12,8 @@ days:
   - Friday
   - Saturday
   - Sunday
-  - df
 breakfast:
-  - What
-  - is
-  - Up
-  - my
-  - friend
-  - lets
-  - eatfdafds
+  - Salmon & Cumbumber
   - ''
 lunch:
   - What
