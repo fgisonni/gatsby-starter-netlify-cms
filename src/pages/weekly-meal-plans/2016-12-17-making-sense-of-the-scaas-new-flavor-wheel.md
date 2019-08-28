@@ -13,27 +13,27 @@ days:
   - Saturday
   - Sunday
 breakfast:
-  - Salmon & Cumbumber
-  - ''
+  - Salmon & Cumcumber
+  - Rainbow Omelet
+  - Sizzling Steak & Zucchini
+  - Scambled Eggs & Broccoli
+  - Sizzling Steak & Zucchini
+  - Sunny Side Asparagus
 lunch:
-  - What
-  - is
-  - Up
-  - my
-  - friend
-  - lets
-  - eat
-  - fsd
+  - Asian Lettuce Wraps
+  - Grilled Chicken Salad
+  - Zucchini Pasta
+  - Shrimp On Cauliflower Rice
+  - Pork Chops & Bok Choy
+  - Turkey Taco Lettuce Wraps
+  - Tuna Stuffed Red Peppers
 dinner:
-  - What
-  - is
-  - Up
-  - my
-  - friend
-  - lets
-  - eat
-  - dsaASDgfddfghfd
-  - ''
+  - Shrimp On Cauliflower Rice
+  - Pork Chops & Bok Choy
+  - Chicken Breast & Brussel Sprouts
+  - Turkey & Cauliflower Mash
+  - Zucchini Lasagna
+  - Fish & Zucchini Chips
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
 
