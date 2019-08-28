@@ -60,7 +60,7 @@ export const WeeklyMealPlanTemplate = ({
               </div>
               {monday.map(mon => (
                 <div key={mon + `monday`} className="table-cell recipes-lead column is-one-quarter">
-                  <Link className="table-link" to={`/recipes/${kebabCase(morning)}`}>{ mon }</Link>
+                  <Link className="table-link" to={`/recipes/${kebabCase(monday)}`}>{ mon }</Link>
                 </div>
               ))}
             </div>
@@ -73,7 +73,7 @@ export const WeeklyMealPlanTemplate = ({
               </div>
               {tuesday.map(tues => (
                 <div key={tues + `tuesday`} className="table-cell recipes-lead column is-one-quarter">
-                  <Link className="table-link" to={`/recipes/${kebabCase(morning)}`}>{ tues }</Link>
+                  <Link className="table-link" to={`/recipes/${kebabCase(tuesday)}`}>{ tues }</Link>
                 </div>
               ))}
             </div>
@@ -86,7 +86,7 @@ export const WeeklyMealPlanTemplate = ({
               </div>
               {wednesday.map(wed => (
                 <div key={wed + `wednesday`} className="table-cell recipes-lead column is-one-quarter">
-                  <Link className="table-link" to={`/recipes/${kebabCase(morning)}`}>{ wed }</Link>
+                  <Link className="table-link" to={`/recipes/${kebabCase(wendesday)}`}>{ wed }</Link>
                 </div>
               ))}
             </div>
@@ -99,7 +99,7 @@ export const WeeklyMealPlanTemplate = ({
               </div>
               {thursday.map(thurs => (
                 <div key={thurs + `thursday`} className="table-cell recipes-lead column is-one-quarter">
-                  <Link className="table-link" to={`/recipes/${kebabCase(morning)}`}>{ thurs }</Link>
+                  <Link className="table-link" to={`/recipes/${kebabCase(thursday)}`}>{ thurs }</Link>
                 </div>
               ))}
             </div>
@@ -112,7 +112,7 @@ export const WeeklyMealPlanTemplate = ({
               </div>
               {friday.map(fri => (
                 <div key={fri + `friday`} className="table-cell recipes-lead column is-one-quarter">
-                  <Link className="table-link" to={`/recipes/${kebabCase(morning)}`}>{ fri }</Link>
+                  <Link className="table-link" to={`/recipes/${kebabCase(friday)}`}>{ fri }</Link>
                 </div>
               ))}
             </div>
@@ -125,7 +125,7 @@ export const WeeklyMealPlanTemplate = ({
               </div>
               {saturday.map(sat => (
                 <div key={sat + `saturday`} className="table-cell recipes-lead column is-one-quarter">
-                  <Link className="table-link" to={`/recipes/${kebabCase(morning)}`}>{ sat }</Link>
+                  <Link className="table-link" to={`/recipes/${kebabCase(saturday)}`}>{ sat }</Link>
                 </div>
               ))}
             </div>
@@ -138,7 +138,7 @@ export const WeeklyMealPlanTemplate = ({
               </div>
               {sunday.map(sun => (
                 <div key={sun + `sunday`} className="table-cell recipes-lead column is-one-quarter">
-                  <Link className="table-link" to={`/recipes/${kebabCase(morning)}`}>{ sun }</Link>
+                  <Link className="table-link" to={`/recipes/${kebabCase(sunday)}`}>{ sun }</Link>
                 </div>
               ))}
             </div>
@@ -209,13 +209,13 @@ export const weeklyPageQuery = graphql`
         tags
         title
         description
-        monday,
-        tuesday,
-        wednesday,
-        thursday,
-        friday,
-        saturday,
-        sunday,
+        monday
+        tuesday
+        wednesday
+        thursday
+        friday
+        saturday
+        sunday
       }
     }
   }
