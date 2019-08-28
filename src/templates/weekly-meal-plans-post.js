@@ -62,7 +62,7 @@ export const WeeklyMealPlanTemplate = ({
                     <div className="column is-one-quarter">
                       {breakfast.map(morning => (
                         <div key={morning + `morning`} className="table-cell recipes-lead">
-                          <Link className="table-link" to={`${kebabCase(morning)}`}>{ morning }</Link>
+                          <Link className="table-link" to={`/recipes/${kebabCase(morning)}`}>{ morning }</Link>
                         </div>
                       ))}
                     </div>
@@ -72,7 +72,7 @@ export const WeeklyMealPlanTemplate = ({
                     <div className="column is-one-quarter">
                       {lunch.map(afternoon => (
                         <div key={afternoon + `afternoon`} className="table-cell recipes-lead">
-                          <Link className="table-link" to={`${kebabCase(afternoon)}`}>{ afternoon }</Link>
+                          <Link className="table-link" to={`/recipes/${kebabCase(afternoon)}`}>{ afternoon }</Link>
                         </div>
                       ))}
                     </div>
@@ -82,7 +82,7 @@ export const WeeklyMealPlanTemplate = ({
                     <div className="column is-one-quarter">
                       {dinner.map(evening => (
                         <div key={evening + `evening`} className="table-cell recipes-lead">
-                          <Link className="table-link" to={`${kebabCase(evening)}`}>{ evening }</Link>
+                          <Link className="table-link" to={`/recipes/${kebabCase(evening)}`}>{ evening }</Link>
                         </div>
                       ))}
                     </div>
