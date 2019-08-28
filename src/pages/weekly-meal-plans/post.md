@@ -8,7 +8,7 @@ monday:
   - Salmon & Cumcumber
   - Rainbow Omelet
   - Sizzling Steak & Zucchini
-tueday:
+tuesday:
   - Salmon & Cumcumber
   - Rainbow Omelet!
   - Sizzling Steak & Zucchini  
