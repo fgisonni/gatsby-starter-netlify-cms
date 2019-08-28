@@ -8,10 +8,14 @@ const WeeklyMealPlanPreview = ({ entry, widgetFor }) => (
     description={entry.getIn(['data', 'description'])}
     title={entry.getIn(['data', 'title'])}
 
-    days={entry.getIn(['data', 'days'])}
-    breakfast={entry.getIn(['data', 'breakfast'])}
-    lunch={entry.getIn(['data', 'lunch'])}
-    dinner={entry.getIn(['data', 'dinner'])}
+    monday={entry.getIn(['data', 'monday'])}
+    tuesday={entry.getIn(['data', 'tuesday'])}
+    wednesday={entry.getIn(['data', 'wednesday'])}
+    thursday={entry.getIn(['data', 'thursday'])}
+    friday={entry.getIn(['data', 'friday'])}
+    saturday={entry.getIn(['data', 'saturday'])}
+    sunday={entry.getIn(['data', 'sunday'])}
+
 
   />
 )

@@ -11,10 +11,13 @@ export const WeeklyMealPlanTemplate = ({
   content,
   contentComponent,
   description,
-  days,
-  breakfast,
-  lunch,
-  dinner,
+  monday,
+  tuesday,
+  wednesday,
+  thursday,
+  friday,
+  saturday,
+  sunday,
   title,
   helmet,
   tags
@@ -29,69 +32,120 @@ export const WeeklyMealPlanTemplate = ({
         </h1>
         <p>{description}</p>
         <PostContent content={content} />
-          <div className="table is-full">
-            {/* Static Columns */}
+        <div className="table is-full">
+          {/* Static Columns */}
+          <div className="columns">
+            <div className="column is-one-quarter table-cell">
+              {title}
+            </div>
+            <div className="column is-one-quarter column-title table-cell">
+              Breakfast
+            </div>
+            <div className="column is-one-quarter column-title table-cell">
+              Lunch
+            </div>
+            <div className="column is-one-quarter column-title table-cell">
+              Dinner
+            </div>
+          </div>
+          {/*
+            Dynamic Table
+
+            Monday
+          */}
+          {monday && monday.length ? (
             <div className="columns">
-              <div className="column is-one-quarter table-cell">
-                {title}
+              <div className="table-cell recipes-lead column is-one-quarter">
+                <p>Monday</p>
               </div>
-              <div className="column is-one-quarter column-title table-cell">
-                Breakfast
-              </div>
-              <div className="column is-one-quarter column-title table-cell">
-                Lunch
-              </div>
-              <div className="column is-one-quarter column-title table-cell">
-                Dinner
-              </div>
-            </div>
-            {/* Dynamic Columns*/}
-              <div className="table-inner">
-                <div className="columns">
-                  {days && days.length ? (
-                    <div className="column is-one-quarter">
-                      {days.map(day => (
-                        <div className="table-cell days">
-                          <p key={day}>{day}</p>
-                        </div>
-                      ))}
-                    </div>
-                  ): null}
-
-                  {breakfast && breakfast.length ? (
-                    <div className="column is-one-quarter">
-                      {breakfast.map(morning => (
-                        <div key={morning + `morning`} className="table-cell recipes-lead">
-                          <Link className="table-link" to={`/recipes/${kebabCase(morning)}`}>{ morning }</Link>
-                        </div>
-                      ))}
-                    </div>
-                  ): null}
-
-                  {lunch && lunch.length ? (
-                    <div className="column is-one-quarter">
-                      {lunch.map(afternoon => (
-                        <div key={afternoon + `afternoon`} className="table-cell recipes-lead">
-                          <Link className="table-link" to={`/recipes/${kebabCase(afternoon)}`}>{ afternoon }</Link>
-                        </div>
-                      ))}
-                    </div>
-                  ): null}
-
-                  {dinner && dinner.length ? (
-                    <div className="column is-one-quarter">
-                      {dinner.map(evening => (
-                        <div key={evening + `evening`} className="table-cell recipes-lead">
-                          <Link className="table-link" to={`/recipes/${kebabCase(evening)}`}>{ evening }</Link>
-                        </div>
-                      ))}
-                    </div>
-                  ): null}
-
+              {monday.map(mon => (
+                <div key={mon + `monday`} className="table-cell recipes-lead column is-one-quarter">
+                  <Link className="table-link" to={`/recipes/${kebabCase(morning)}`}>{ mon }</Link>
                 </div>
-              </div>
+              ))}
             </div>
-      </div>
+          ): null}
+          {/*Tuesday*/}
+          {tuesday && tuesday.length ? (
+            <div className="columns">
+              <div className="table-cell recipes-lead column is-one-quarter">
+                <p>Tuesday</p>
+              </div>
+              {tuesday.map(tues => (
+                <div key={tues + `tuesday`} className="table-cell recipes-lead column is-one-quarter">
+                  <Link className="table-link" to={`/recipes/${kebabCase(morning)}`}>{ tues }</Link>
+                </div>
+              ))}
+            </div>
+          ): null}
+          {/*Wednesday*/}
+          {wednesday && wednesday.length ? (
+            <div className="columns">
+              <div className="table-cell recipes-lead column is-one-quarter">
+                <p>Wednesday</p>
+              </div>
+              {wednesday.map(wed => (
+                <div key={wed + `wednesday`} className="table-cell recipes-lead column is-one-quarter">
+                  <Link className="table-link" to={`/recipes/${kebabCase(morning)}`}>{ wed }</Link>
+                </div>
+              ))}
+            </div>
+          ): null}
+          {/*Thursday*/}
+          {thursday && thursday.length ? (
+            <div className="columns">
+              <div className="table-cell recipes-lead column is-one-quarter">
+                <p>Thursday</p>
+              </div>
+              {thursday.map(thurs => (
+                <div key={thurs + `thursday`} className="table-cell recipes-lead column is-one-quarter">
+                  <Link className="table-link" to={`/recipes/${kebabCase(morning)}`}>{ thurs }</Link>
+                </div>
+              ))}
+            </div>
+          ): null}
+          {/*Friday*/}
+          {friday && friday.length ? (
+            <div className="columns">
+              <div className="table-cell recipes-lead column is-one-quarter">
+                <p>Friday</p>
+              </div>
+              {friday.map(fri => (
+                <div key={fri + `friday`} className="table-cell recipes-lead column is-one-quarter">
+                  <Link className="table-link" to={`/recipes/${kebabCase(morning)}`}>{ fri }</Link>
+                </div>
+              ))}
+            </div>
+          ): null}
+          {/*Saturday*/}
+          {saturday && saturday.length ? (
+            <div className="columns">
+              <div className="table-cell recipes-lead column is-one-quarter">
+                <p>Saturday</p>
+              </div>
+              {saturday.map(sat => (
+                <div key={sat + `saturday`} className="table-cell recipes-lead column is-one-quarter">
+                  <Link className="table-link" to={`/recipes/${kebabCase(morning)}`}>{ sat }</Link>
+                </div>
+              ))}
+            </div>
+          ): null}
+          {/*Sunday*/}
+          {sunday && sunday.length ? (
+            <div className="columns">
+              <div className="table-cell recipes-lead column is-one-quarter">
+                <p>Sunday</p>
+              </div>
+              {sunday.map(sun => (
+                <div key={sun + `sunday`} className="table-cell recipes-lead column is-one-quarter">
+                  <Link className="table-link" to={`/recipes/${kebabCase(morning)}`}>{ sun }</Link>
+                </div>
+              ))}
+            </div>
+          ): null}
+          {/*Table closing*/}
+          </div>
+        </div>
     </section>
   )
 }
@@ -124,10 +178,13 @@ const WeeklyMealPlan = ({ data }) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
 
-        days={post.frontmatter.days}
-        breakfast={post.frontmatter.breakfast}
-        lunch={post.frontmatter.lunch}
-        dinner={post.frontmatter.dinner}
+        monday={post.frontmatter.monday}
+        tuesday={post.frontmatter.tuesday}
+        wednesday={post.frontmatter.wednesday}
+        thursday={post.frontmatter.thursday}
+        friday={post.frontmatter.friday}
+        saturday={post.frontmatter.saturday}
+        sunday={post.frontmatter.sunday}
 
       />
     </Layout>
@@ -152,10 +209,13 @@ export const weeklyPageQuery = graphql`
         tags
         title
         description
-        days
-        breakfast
-        lunch
-        dinner
+        monday,
+        tuesday,
+        wednesday,
+        thursday,
+        friday,
+        saturday,
+        sunday,
       }
     }
   }
