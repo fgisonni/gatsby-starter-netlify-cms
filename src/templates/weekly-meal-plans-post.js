@@ -86,7 +86,7 @@ export const WeeklyMealPlanTemplate = ({
               </div>
               {wednesday.map(wed => (
                 <div key={wed + `wednesday`} className="table-cell recipes-lead column is-one-quarter">
-                  <Link className="table-link" to={`/recipes/${kebabCase(wendesday)}`}>{ wed }</Link>
+                  <Link className="table-link" to={`/recipes/${kebabCase(wednesday)}`}>{ wed }</Link>
                 </div>
               ))}
             </div>
@@ -175,7 +175,6 @@ const WeeklyMealPlan = ({ data }) => {
             />
           </Helmet>
         }
-        tags={post.frontmatter.tags}
         title={post.frontmatter.title}
 
         monday={post.frontmatter.monday}
