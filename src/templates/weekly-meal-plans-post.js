@@ -55,7 +55,7 @@ export const WeeklyMealPlanTemplate = ({
           */}
           {monday && monday.length ? (
             <div className="columns">
-              <div className="table-cell recipes-lead column is-one-quarter">
+              <div className="table-cell day column is-one-quarter">
                 <p>Monday</p>
               </div>
               {monday.map(mon => (
@@ -68,7 +68,7 @@ export const WeeklyMealPlanTemplate = ({
           {/*Tuesday*/}
           {tuesday && tuesday.length ? (
             <div className="columns">
-              <div className="table-cell recipes-lead column is-one-quarter">
+              <div className="table-cell day column is-one-quarter">
                 <p>Tuesday</p>
               </div>
               {tuesday.map(tues => (
@@ -81,7 +81,7 @@ export const WeeklyMealPlanTemplate = ({
           {/*Wednesday*/}
           {wednesday && wednesday.length ? (
             <div className="columns">
-              <div className="table-cell recipes-lead column is-one-quarter">
+              <div className="table-cell day column is-one-quarter">
                 <p>Wednesday</p>
               </div>
               {wednesday.map(wed => (
@@ -94,7 +94,7 @@ export const WeeklyMealPlanTemplate = ({
           {/*Thursday*/}
           {thursday && thursday.length ? (
             <div className="columns">
-              <div className="table-cell recipes-lead column is-one-quarter">
+              <div className="table-cell day column is-one-quarter">
                 <p>Thursday</p>
               </div>
               {thursday.map(thurs => (
@@ -107,7 +107,7 @@ export const WeeklyMealPlanTemplate = ({
           {/*Friday*/}
           {friday && friday.length ? (
             <div className="columns">
-              <div className="table-cell recipes-lead column is-one-quarter">
+              <div className="table-cell day column is-one-quarter">
                 <p>Friday</p>
               </div>
               {friday.map(fri => (
@@ -120,7 +120,7 @@ export const WeeklyMealPlanTemplate = ({
           {/*Saturday*/}
           {saturday && saturday.length ? (
             <div className="columns">
-              <div className="table-cell recipes-lead column is-one-quarter">
+              <div className="table-cell day column is-one-quarter">
                 <p>Saturday</p>
               </div>
               {saturday.map(sat => (
@@ -133,7 +133,7 @@ export const WeeklyMealPlanTemplate = ({
           {/*Sunday*/}
           {sunday && sunday.length ? (
             <div className="columns">
-              <div className="table-cell recipes-lead column is-one-quarter">
+              <div className="table-cell day column is-one-quarter">
                 <p>Sunday</p>
               </div>
               {sunday.map(sun => (
