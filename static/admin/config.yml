@@ -46,13 +46,13 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Monday", name: "days", widget: "list"}
-      - {label: "Tuesday", name: "days", widget: "list"}
-      - {label: "Wednesday", name: "days", widget: "list"}
-      - {label: "Thursday", name: "days", widget: "list"}
-      - {label: "Friday", name: "days", widget: "list"}
-      - {label: "Saturday", name: "days", widget: "list"}
-      - {label: "Sunday", name: "days", widget: "list"}
+      - {label: "Monday", name: "monday", widget: "list"}
+      - {label: "Tuesday", name: "tuesday", widget: "list"}
+      - {label: "Wednesday", name: "wednesday", widget: "list"}
+      - {label: "Thursday", name: "thursday", widget: "list"}
+      - {label: "Friday", name: "friday", widget: "list"}
+      - {label: "Saturday", name: "saturday", widget: "list"}
+      - {label: "Sunday", name: "sunday", widget: "list"}
 
   - name: "recipes"
     label: "Recipes"
