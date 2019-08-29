@@ -6,7 +6,7 @@ description: >-
   tasters, has been revised for the first time this year. hello
 days:
   - Salmon & Cucumber
-  - ''
+  - Asian Lettuce Wraps
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
 
