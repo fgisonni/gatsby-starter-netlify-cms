@@ -154,6 +154,35 @@ h3,
     border-radius: 6px;
     padding: .5rem;
 
+.table
+  text-align: center;
+  margin: 2rem 0;
+  border: 2px solid #018280;
+  border-radius: 10px;
+  .columns
+    margin: 0;
+    .day
+      color: #fff;
+    .table-cell
+      align-items: stretch;
+      padding: 0;
+      padding: 1.5rem 1em;
+    //Days column
+    &:nth-child(2n)
+      .day
+        background: #009a97;
+    &:nth-child(2n+1)
+      .day
+        background: #018280;
+    // Recipes Column
+    &:nth-child(2n)
+      .recipes-lead
+        background: #fff;
+    &:nth-child(2n+1)
+      .recipes-lead
+        background: #e5f5f4;
+
+
 //Tablet
 @media (min-width: 728px)
 
