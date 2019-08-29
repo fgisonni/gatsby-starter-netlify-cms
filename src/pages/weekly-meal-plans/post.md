@@ -4,8 +4,20 @@ title: Week 1
 description: >-
   The Coffee Taster’s Flavor Wheel, the official resource used by coffee
   tasters, has been revised for the first time this year. hello
-days:
+monday:
   - Salmon & Cucumber
+tuesday:
+  - Salmon & Cucumber  
+wednesday:
+  - Salmon & Cucumber  
+thursday:
+  - Salmon & Cucumber  
+friday:
+  - Salmon & Cucumber  
+saturday:
+  - Salmon & Cucumber  
+sunday:
+  - Salmon & Cucumber  
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
 
