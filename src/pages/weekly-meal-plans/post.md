@@ -6,18 +6,32 @@ description: >-
   tasters, has been revised for the first time this year. hello
 monday:
   - Salmon & Cucumber
+  - Asian Lettuce Wraps
+  - Shrimp on Cauliflower Rice
 tuesday:
-  - Salmon & Cucumber  
+  - Rainbow Omelet
+  - Grilled Chicken Salad
+  - Pork Chops & Bok Choy
 wednesday:
-  - Salmon & Cucumber  
+  - Sizzling Steak & Zucchini
+  - Zucchini “Pasta”
+  - Chicken Breast & Cucumber
 thursday:
-  - Salmon & Cucumber  
+  - Scrambled Eggs & Broccoli
+  - Shrimp on Cauliflower Rice
+  - Lamb Chops & Brussel Sprouts
 friday:
-  - Salmon & Cucumber  
+  - Egg Cauliflower Couscous
+  - Pork Chops & Bok Choy
+  - Turkey & Cauliflower Mash
 saturday:
-  - Salmon & Cucumber  
+  - Sizzling Steak & Zucchini
+  - Turkey Taco Lettuce Wraps
+  - Zucchini “Lasagna”
 sunday:
-  - Salmon & Cucumber  
+  - Sunny Side Asparagus
+  - Tuna Stuffed Red Pepper
+  - Fish & Zucchini Chips
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
 
