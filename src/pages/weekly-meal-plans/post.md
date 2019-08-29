@@ -4,34 +4,9 @@ title: Week 1
 description: >-
   The Coffee Taster’s Flavor Wheel, the official resource used by coffee
   tasters, has been revised for the first time this year. hello
-monday:
-  - Salmon & Cumcumber
-  - Rainbow Omelet
-  - Sizzling Steak & Zucchini
-tuesday:
-  - Salmon & Cumcumber
-  - Rainbow Omelet!
-  - Sizzling Steak & Zucchini  
-wednesday:
-  - Salmon & Cumcumber
-  - Rainbow Omelet
-  - Sizzling Steak & Zucchini  
-thursday:
-  - Salmon & Cumcumber
-  - Rainbow Omelet
-  - Sizzling Steak & Zucchini
-friday:
-  - Salmon & Cumcumber
-  - Rainbow Omelet
-  - Sizzling Steak & Zucchini
-saturday:
-  - Salmon & Cumcumber
-  - Rainbow Omelet
-  - Sizzling Steak & Zucchini        
-sunday:
-  - Salmon & Cumcumber
-  - Rainbow Omelet
-  - Sizzling Steak & Zucchini  
+days:
+  - Salmon & Cucumber
+  - ''
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
 
