@@ -5,7 +5,6 @@ import { WeeklyMealPlanTemplate } from '../../templates/weekly-meal-plans-post'
 const WeeklyMealPlanPreview = ({ entry, widgetFor }) => (
   <WeeklyMealPlanTemplate
     content={widgetFor('body')}
-    description={entry.getIn(['data', 'description'])}
     title={entry.getIn(['data', 'title'])}
 
     monday={entry.getIn(['data', 'monday'])}

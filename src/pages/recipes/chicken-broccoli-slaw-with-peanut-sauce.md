@@ -5,7 +5,7 @@ date: 2019-08-22T18:49:26.547Z
 featuredimage: /img/chicken-broccoli-with-peanut-sauce.png
 path: recipes
 ---
-![](/img/chicken-broccoli-with-peanut-sauce.png)
+![Chicken & Broccoli Slaw with Peanut Sauce](/img/chicken-broccoli-with-peanut-sauce.png)
 
 ## INGREDIENTS
 

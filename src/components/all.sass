@@ -161,12 +161,23 @@ h3,
   border-radius: 10px;
   .columns
     margin: 0;
+    .column-title
+      color: #ffea7f;
+      font-size: 20px;
+      &:nth-child(2n)
+        background: #009a97;
+      &:nth-child(2n+1)
+        background: #018280;
     .day
       color: #fff;
     .table-cell
       align-items: stretch;
       padding: 0;
       padding: 1.5rem 1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
     //Days column
     &:nth-child(2n)
       .day
@@ -175,6 +186,9 @@ h3,
       .day
         background: #018280;
     // Recipes Column
+    .recipes-lead
+      font-size: 18px;
+      color: #0073aa;
     &:nth-child(2n)
       .recipes-lead
         background: #fff;

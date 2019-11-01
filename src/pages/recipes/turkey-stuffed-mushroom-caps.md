@@ -5,7 +5,7 @@ date: 2019-08-22T20:36:45.645Z
 featuredimage: /img/turkey-stuffed-mushroom-caps.png
 path: recipes
 ---
-![](/img/turkey-stuffed-mushroom-caps.png)
+![Turkey Stuffed Mushroom Caps](/img/turkey-stuffed-mushroom-caps.png)
 
 ## INGREDIENTS
 

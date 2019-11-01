@@ -44,7 +44,6 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "weekly-meal-plans-post"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Monday", name: "monday", widget: "list"}
       - {label: "Tuesday", name: "tuesday", widget: "list"}

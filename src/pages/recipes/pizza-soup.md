@@ -5,7 +5,7 @@ date: 2019-08-22T19:47:31.287Z
 featuredimage: /img/pizza-soup.png
 path: recipes
 ---
-![](/img/pizza-soup.png)
+![Pizza Soup](/img/pizza-soup.png)
 
 ## INGREDIENTS
 

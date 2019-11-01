@@ -5,7 +5,7 @@ date: 2019-08-22T20:13:49.574Z
 featuredimage: /img/scrambled_eggs_broccoli.png
 path: recipes
 ---
-![](/img/scrambled_eggs_broccoli.png)
+![Scrambled Eggs & Broccoli](/img/scrambled_eggs_broccoli.png)
 
 ## INGREDIENTS  
 

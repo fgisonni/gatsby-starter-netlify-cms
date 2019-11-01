@@ -15,7 +15,7 @@ path: recipes
 * 1 garlic clove, finely minced Fresh basil
 * Sea salt & pepper to taste
 
-**INSTRUCTIONS**  
+## INSTRUCTIONS  
 
 1. Place a box grater on its side with the largest grating holes facing up.
 2. Cut the ends of the zucchini, and then push along the top of the grater in long strokes to create long, thin ribbons of zucchini.

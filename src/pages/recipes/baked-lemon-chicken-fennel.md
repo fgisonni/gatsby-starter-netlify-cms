@@ -5,7 +5,7 @@ date: 2019-08-22T16:26:24.771Z
 featuredimage: /img/baked-lemon-chicken-fennel.png
 path: recipes
 ---
-![](/img/baked-lemon-chicken-fennel.png)
+![Baked Lemon Chicken & Fennel](/img/baked-lemon-chicken-fennel.png)
 
 ## INGREDIENTS
 

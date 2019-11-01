@@ -5,7 +5,7 @@ date: 2019-08-22T19:38:31.538Z
 featuredimage: /img/korean_beef_cauliflower.png
 path: recipes
 ---
-![](/img/korean_beef_cauliflower.png)
+![Korean Beef & Cauliflower Rice](/img/korean_beef_cauliflower.png)
 
 ## INGREDIENTS
 

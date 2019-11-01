@@ -5,7 +5,7 @@ date: 2019-08-22T20:34:36.730Z
 featuredimage: /img/turkey-lettuce-salad.png
 path: recipes
 ---
-![](/img/turkey-lettuce-salad.png)
+![Turkey Lettuce Salad](/img/turkey-lettuce-salad.png)
 
 ## INGREDIENTS
 

@@ -5,7 +5,7 @@ date: 2019-08-22T16:55:18.994Z
 featuredimage: /img/pasted-image-0.png
 path: recipes
 ---
-![](/img/pasted-image-0.png)
+![Sausage & Pepper Egg Muffins](/img/pasted-image-0.png)
 
 ## Ingredients
 

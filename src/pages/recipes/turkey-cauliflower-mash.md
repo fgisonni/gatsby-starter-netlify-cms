@@ -5,7 +5,7 @@ date: 2019-08-22T20:32:32.640Z
 featuredimage: /img/turkey_cauliflower.png
 path: recipes
 ---
-![](/img/turkey_cauliflower.png)
+![Turkey & Cauliflower Mash](/img/turkey_cauliflower.png)
 
 ## INGREDIENTS
 

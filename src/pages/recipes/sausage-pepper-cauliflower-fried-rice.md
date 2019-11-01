@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'Sausage, Pepper & Cauliflower Fried Rice'
+title: Sausage, Pepper & Cauliflower Fried Rice
 date: 2019-08-22T20:10:31.380Z
 featuredimage: /img/sausage-pepper-cauliflower-fried-rice-1.png
 path: recipes

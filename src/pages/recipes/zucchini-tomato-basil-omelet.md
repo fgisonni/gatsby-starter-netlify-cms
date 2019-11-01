@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'Zucchini, Tomato & Basil Omelet'
+title: Zucchini, Tomato & Basil Omelet
 date: 2019-08-22T20:40:45.433Z
 featuredimage: /img/zucchini-tomato-basil-omelet.png
 path: recipes

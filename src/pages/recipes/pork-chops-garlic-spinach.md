@@ -5,7 +5,7 @@ date: 2019-08-22T20:02:43.837Z
 featuredimage: /img/pork-chops-garlic-spinach.png
 path: recipes
 ---
-![](/img/pork-chops-garlic-spinach.png)
+![Pork Chops & Garlic Spinach](/img/pork-chops-garlic-spinach.png)
 
 ## INGREDIENTS
 

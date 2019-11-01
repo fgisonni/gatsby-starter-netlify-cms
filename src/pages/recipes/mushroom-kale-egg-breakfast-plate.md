@@ -1,11 +1,11 @@
 ---
 templateKey: blog-post
-title: 'Mushroom, Kale & Egg Breakfast Plate'
+title: Mushroom, Kale & Egg Breakfast Plate
 date: 2019-08-22T19:42:27.389Z
 featuredimage: /img/mushroom-kale-egg-breakfast-plate.png
 path: recipes
 ---
-![](/img/mushroom-kale-egg-breakfast-plate.png)
+![Mushroom, Kale & Egg Breakfast Plate](/img/mushroom-kale-egg-breakfast-plate.png)
 
 ## INGREDIENTS
 

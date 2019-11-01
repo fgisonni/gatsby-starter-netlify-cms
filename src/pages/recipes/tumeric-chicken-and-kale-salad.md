@@ -5,7 +5,7 @@ date: 2019-08-22T20:29:18.803Z
 featuredimage: /img/tumeric-chicken-kale-salad-1.png
 path: recipes
 ---
-![](/img/tumeric-chicken-kale-salad-1.png)
+![Tumeric Chicken and Kale Salad](/img/tumeric-chicken-kale-salad-1.png)
 
 ## INGREDIENTS
 
