@@ -7,8 +7,6 @@ description: >-
   results with this program
 featuredpost: false
 featuredimage: /img/quick-start-fasting-card-image.png
-tags:
-  - ''
 path: quick-start-guides
 ---
 So you’re taking the next step to naturally manage your blood sugar!

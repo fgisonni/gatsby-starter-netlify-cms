@@ -14,7 +14,7 @@ class WeekCard extends React.Component {
       <div className="columns is-multiline">
         {posts &&
           posts.map(({ node: post }, i) => (
-            <Link key={post.id} className="is-parent week-block column is-full" to={post.fields.slug}>
+            <Link key={post.id} className="is-parent week-block column is-full" to={post.fields.slug} data-order={i}>
               <div>
                 <article className="blog-list-item box week-block-inner">
                   <div className="columns week-block-content">
@@ -49,7 +49,7 @@ export default () => (
     query={graphql`
       query WeekCardQuery {
         allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
+          sort: { order: ASC, fields: [frontmatter___date] }
           filter: { frontmatter: { templateKey: { eq: "weekly-meal-plans-post" } } }
         ) {
           edges {
@@ -65,13 +65,6 @@ export default () => (
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
                 path
-                featuredimage {
-                  childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
               }
             }
           }

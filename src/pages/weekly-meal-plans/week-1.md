@@ -1,6 +1,7 @@
 ---
 templateKey: weekly-meal-plans-post
 title: Week 1
+date: 2019-08-15T18:21:39.211Z
 monday:
   - Salmon & Cucumber
   - Asian Lettuce Wraps
