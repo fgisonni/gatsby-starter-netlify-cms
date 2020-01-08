@@ -66,6 +66,21 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Path", name: "path", widget: "string"}
 
+  - name: "test"
+    label: "Test"
+    folder: "src/pages/fitness/test"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "fitness-post-child"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
+      - {label: "Featured Image", name: "featuredimage", widget: image}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Path", name: "path", widget: "string"}
+
   - name: "weekly-meal-plans"
     label: "Weekly Meal Plans"
     folder: "src/pages/weekly-meal-plans"

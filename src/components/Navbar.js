@@ -83,10 +83,10 @@ const Navbar = class extends React.Component {
               Recipes
             </Link>
             <p className="navbar-item-title">Additional Bonuses</p>
-            <Link className="navbar-item">
+            <Link className="navbar-item" to="meditations">
               Meditations
             </Link>
-            <Link className="navbar-item">
+            <Link className="navbar-item" to="fitness">
               Fitness
             </Link>
           </div>

@@ -1,13 +1,13 @@
 ---
 templateKey: blog-post
-title: Quick Start Basics
+title: Test
 date: 2019-08-23T18:46:17.924Z
 description: >-
   Start here to get a quick overview of the entire program to balance your blood
   sugar quickly
 featuredpost: false
 featuredimage: /img/quick-start-card-image.png
-path: quick-start-guides
+path: fitness/test
 ---
 So you’ve decided to take the leap to naturally manage your blood sugar! We couldn’t be more thrilled for you!
 
