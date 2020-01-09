@@ -5,7 +5,6 @@ import { ExerciseTemplate } from '../../templates/exercise-post'
 const ExercisePreview = ({ entry, widgetFor }) => (
   <ExerciseTemplate
     content={widgetFor('body')}
-    description={entry.getIn(['data', 'description'])}
     title={entry.getIn(['data', 'title'])}
   />
 )

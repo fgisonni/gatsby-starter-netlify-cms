@@ -8,7 +8,6 @@ import Content, { HTMLContent } from '../components/Content'
 export const YogaTemplate = ({
   content,
   contentComponent,
-  description,
   tags,
   title,
   helmet,
@@ -22,7 +21,6 @@ export const YogaTemplate = ({
         <h1 className="title is-size-5 is-bold-light">
           {title}
         </h1>
-        <p>{description}</p>
         <PostContent content={content} />
       </div>
     </section>
@@ -32,7 +30,6 @@ export const YogaTemplate = ({
 YogaTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
-  description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
 }
@@ -45,14 +42,9 @@ const Yoga = ({ data }) => {
       <YogaTemplate
         content={post.html}
         contentComponent={HTMLContent}
-        description={post.frontmatter.description}
         helmet={
           <Helmet titleTemplate="%s | Yoga">
             <title>{`${post.frontmatter.title}`}</title>
-            <meta
-              name="description"
-              content={`${post.frontmatter.description}`}
-            />
           </Helmet>
         }
         tags={post.frontmatter.tags}
@@ -78,7 +70,6 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
-        description
         tags
       }
     }
