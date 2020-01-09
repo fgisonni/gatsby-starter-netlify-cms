@@ -1,7 +1,8 @@
 ---
 templateKey: exercise-post
-title: Body Weight Exercise I
+title: Body Weight Exercise I test
 date: 2019-08-23T18:46:17.924Z
+description: test
 featuredpost: false
 featuredimage: /img/quick-start-card-image.png
 path: fitness/exercises
