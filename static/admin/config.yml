@@ -66,13 +66,13 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Path", name: "path", widget: "string"}
 
-  - name: "test"
-    label: "Test"
-    folder: "src/pages/fitness/test"
+  - name: "exercises"
+    label: "Exercises"
+    folder: "src/pages/fitness/exercises"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "fitness-post-child"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "exercise-post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}

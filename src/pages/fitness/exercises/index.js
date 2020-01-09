@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from '../../../components/Layout'
 import BlogCard from '../../../components/BlogCard'
 
-export default class FitnessPage extends React.Component {
+export default class ExercisePage extends React.Component {
 
   render(props) {
     return (

@@ -1,10 +1,9 @@
 ---
-templateKey: fitness-post-child
+templateKey: fitness-post
 title: Exercises
 date: 2019-08-23T18:46:17.924Z
 description: >-
-  Start here to get a quick overview of the entire program to balance your blood
-  sugar quickly
+  ok
 featuredpost: false
 featuredimage: /img/quick-start-card-image.png
 path: fitness

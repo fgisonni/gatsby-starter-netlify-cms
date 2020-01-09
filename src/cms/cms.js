@@ -13,6 +13,8 @@ import QuickStartGuidesPreview from './preview-templates/QuickStartGuidesPreview
 import MeditationsPreview from './preview-templates/MeditationsPreview'
 import FitnessPreview from './preview-templates/FitnessPreview'
 
+import ExercisePreview from './preview-templates/ExercisePreview'
+
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
 
@@ -26,3 +28,5 @@ CMS.registerPreviewTemplate('recipes', RecipesPostPreview)
 CMS.registerPreviewTemplate('quick', QuickStartGuidesPreview)
 CMS.registerPreviewTemplate('meditations', MeditationsPreview)
 CMS.registerPreviewTemplate('fitness', FitnessPreview)
+
+CMS.registerPreviewTemplate('exercise-child', ExercisePreview)
