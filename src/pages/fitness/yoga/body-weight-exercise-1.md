@@ -1,6 +1,6 @@
 ---
 templateKey: yoga-post
-title: Yoga Stuffs
+title: Yoga Stuffs hello
 date: 2019-08-23T18:46:17.924Z
 description: ok special
 featuredpost: false
