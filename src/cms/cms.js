@@ -14,6 +14,7 @@ import MeditationsPreview from './preview-templates/MeditationsPreview'
 import FitnessPreview from './preview-templates/FitnessPreview'
 
 import ExercisePreview from './preview-templates/ExercisePreview'
+import YogaPreview from './preview-templates/YogaPreview'
 
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
@@ -29,4 +30,5 @@ CMS.registerPreviewTemplate('quick', QuickStartGuidesPreview)
 CMS.registerPreviewTemplate('meditations', MeditationsPreview)
 CMS.registerPreviewTemplate('fitness', FitnessPreview)
 
-CMS.registerPreviewTemplate('exercise-child', ExercisePreview)
+CMS.registerPreviewTemplate('exercises', ExercisePreview)
+CMS.registerPreviewTemplate('yoga', YogaPreview)
