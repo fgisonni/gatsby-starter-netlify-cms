@@ -30,7 +30,9 @@ _For example, you do 10 squats and rest 30-60 seconds (that is one set). Then yo
 
 Correct positioning to do a body weight squat
 
-<iframe src="https://player.vimeo.com/video/267672677" width="640" height="350" frameBorder="0" allowfullscreen="allowfullscreen"></iframe>
+<figure style="margin: 0; max-width: 100%;">
+  <iframe src="https://player.vimeo.com/video/267672677" width="640" height="350" frameBorder="0" allowfullscreen="allowfullscreen" style="max-width: 100%;"></iframe>
+</figure>
 
 ## BURPEES
 

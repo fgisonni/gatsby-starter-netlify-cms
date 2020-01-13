@@ -1,4 +1,5 @@
 import React from 'react'
+import './../style.sass'
 
 import Layout from '../../../components/Layout'
 import BlogCard from '../../../components/BlogCard'
